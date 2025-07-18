@@ -9,7 +9,7 @@ def american_a_decimal(cuota_americana):
 
 st.set_page_config(page_title="Estrategia: Mayor probabilidad", layout="centered")
 
-st.title("🎯 Estrategia de Apuesta por Probabilidad Alta")
+st.title("🎯 Estrategia de Apuesta por Probabilidad Alta Ricardo")
 st.markdown("Introduce las cuotas *americanas* de los 3 posibles resultados:")
 
 # Entradas
