@@ -9,7 +9,7 @@ def american_a_decimal(cuota_americana):
 
 st.set_page_config(page_title="Estrategia: Mayor probabilidad", layout="centered")
 
-st.title("🎯 Estrategia de Apuesta por Probabilidad Alta Ricardo Salvatierra")
+st.title("🎯 Estrategia de Apuesta por Probabilidad Alta Ricardo")
 st.markdown("Introduce las cuotas  de los 3 posibles resultados:")
 
 # Entradas
@@ -60,5 +60,6 @@ if st.button("Calcular estrategia"):
         st.write(f"Si gana {resultado}: **${ganancias[resultado]:.2f}** (neta: **${ganancia_neta:.2f}**)")
 
     st.markdown(f"🔍 Apuesta principal: **{resultado_probable}** (cuota más baja, más probable)")
+
 
 
