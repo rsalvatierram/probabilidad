@@ -10,12 +10,12 @@ def american_a_decimal(cuota_americana):
 st.set_page_config(page_title="Estrategia: Mayor probabilidad", layout="centered")
 
 st.title("🎯 Estrategia de Apuesta por Probabilidad Alta Ricardo")
-st.markdown("Introduce las cuotas *americanas* de los 3 posibles resultados:")
+st.markdown("Introduce las cuotas  de los 3 posibles resultados:")
 
 # Entradas
-cuota_a_usa = st.number_input("Cuota americana: Gana A", value=+120)
-cuota_empate_usa = st.number_input("Cuota americana: Empate", value=+250)
-cuota_b_usa = st.number_input("Cuota americana: Gana B", value=+180)
+cuota_a_usa = st.number_input("Cuota Momio: Gana A", value=+120)
+cuota_empate_usa = st.number_input("Cuota Momio: Empate", value=+250)
+cuota_b_usa = st.number_input("Cuota Momio: Gana B", value=+180)
 capital = st.number_input("💵 Monto total a apostar (MXN)", min_value=1.0, value=100.0)
 recuperacion_pct = st.slider("Porcentaje de recuperación en las apuestas secundarias (%)", 0, 100, 70)
 
@@ -60,3 +60,4 @@ if st.button("Calcular estrategia"):
         st.write(f"Si gana {resultado}: **${ganancias[resultado]:.2f}** (neta: **${ganancia_neta:.2f}**)")
 
     st.markdown(f"🔍 Apuesta principal: **{resultado_probable}** (cuota más baja, más probable)")
+
